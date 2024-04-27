@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function compareTriplets(a, b) {\n    let apoints=0;\n    let bpoints=0;\n    for (let i =0;i<=a.length && b.length;i++){\n        if(a[i]>b[i])\n            apoints+=1\n        else if(a[i]<b[i])\n            bpoints+=1\n    }\n    return [apoints,bpoints];\n}"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function migratoryBirds(arr) {\n    let seen = {};\n    arr.forEach(bird =>{\n        if(!seen[bird])\n            seen[bird]=1\n        else{\n            seen[bird]++;\n        }  \n    })\n    let total=0;\n    let id=0;\n    \n    for(let key in seen){\n        if(seen[key]>total){\n            total=seen[key]\n            id=key\n        }\n        else if(id>key){\n            id=key\n        }\n    }\n    return id;\n}"
             ],
             "outputs": []
         }
