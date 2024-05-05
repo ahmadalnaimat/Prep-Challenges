@@ -73,7 +73,7 @@ const eveCharacter = (str) => {
 
 const chickenGradients = (arr) => {
     //write your code here ...
-    return arr.flatMap(innerarray=> innerarray.filter(food=>food.includes("chicken")));
+    return arr.map(innerarray=> innerarray.filter(food=>food.includes("chicken")));
 }
 // -------------------------------------------------------------------------------------------------------
 
